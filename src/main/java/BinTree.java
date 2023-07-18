@@ -12,14 +12,14 @@ public class BinTree {
         return false;
 
     }
-        public Node  turnLeft(Node node) {
+    public Node  turnLeft(Node node) {
         Node child = node.right;
         Node childLeft = child.left;
         child.left = node;
         node.right = childLeft;
         return child;
     }
-        public Node turnRight(Node node) {
+    public Node turnRight(Node node) {
         Node child = node.left;
         Node childRight = child.right;
         child.right = node;
@@ -27,7 +27,7 @@ public class BinTree {
         return child;
     }
 
-    void swapColors(Node node1, Node node2) {
+    public void swapColors(Node node1, Node node2) {
         Color temp = node1.color;
         node1.color = node2.color;
         node2.color = temp;
